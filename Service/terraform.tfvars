@@ -1,0 +1,17 @@
+resource_group_name = "example-rg7500"
+location            = "central india"
+budget_name                   = "example-budget"
+amount                        = 1000
+time_grain                    = "Monthly"
+start_date                    = "2025-03-01T00:00:00Z"
+end_date                      = "2027-03-31T23:59:59Z"
+notification_enabled          = true
+notification_threshold_1      = 90.0
+notification_operator_1       = "EqualTo"
+notification_threshold_type_1 = "Forecasted"
+contact_emails_1              = ["foo@example.com", "bar@example.com"]
+contact_roles_1               = ["Owner"]
+notification_enabled_2        = false
+notification_threshold_2      = 100.0
+notification_operator_2       = "GreaterThan"
+contact_emails_2              = ["foo@example.com", "bar@example.com"]
