@@ -1,10 +1,5 @@
-variable "resource_group_name" {
-  description = "The name of the resource group"
-  type        = string
-}
-
-variable "location" {
-  description = "The Azure location where the resource group is created"
+variable "resource_group_id" {
+  description = "The ID of the resource group"
   type        = string
 }
 
@@ -33,7 +28,7 @@ variable "end_date" {
   type        = string
 }
 
-variable "notification_enabled" {
+variable "notification_enabled_1" {
   description = "Enable first notification"
   type        = bool
   default     = true
