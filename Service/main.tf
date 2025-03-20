@@ -1,14 +1,13 @@
-module "resource_group_budget" {
+module "azure_budget" {
   source = "../azure_budget_alert"
 
-  resource_group_name           = var.resource_group_name
-  location                      = var.location
+  resource_group_id             = var.resource_group_id
   budget_name                   = var.budget_name
   amount                        = var.amount
   time_grain                    = var.time_grain
   start_date                    = var.start_date
   end_date                      = var.end_date
-  notification_enabled          = var.notification_enabled
+  notification_enabled_1        = var.notification_enabled_1
   notification_threshold_1      = var.notification_threshold_1
   notification_operator_1       = var.notification_operator_1
   notification_threshold_type_1 = var.notification_threshold_type_1
