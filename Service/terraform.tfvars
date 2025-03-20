@@ -1,5 +1,5 @@
-resource_group_id             = "/subscriptions/809eff35-137f-4411-9bef-83c5a1552808/resourceGroups/king-kon759875"
-budget_name                   = "example-budget7500"
+resource_group_id             = "resource_group_id"
+budget_name                   = "example-budget"
 amount                        = 1000
 time_grain                    = "Monthly"
 start_date                    = "2025-03-01T00:00:00Z"
