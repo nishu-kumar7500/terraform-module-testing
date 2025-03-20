@@ -2,15 +2,9 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_resource_group" "example" {
-  name     = var.resource_group_name
-  location = var.location
-
-}
-
 resource "azurerm_consumption_budget_resource_group" "example" {
   name              = var.budget_name
-  resource_group_id = azurerm_resource_group.example.id
+  resource_group_id = var.resource_group_id
 
   amount     = var.amount
   time_grain = var.time_grain
@@ -21,7 +15,7 @@ resource "azurerm_consumption_budget_resource_group" "example" {
   }
 
   notification {
-    enabled        = var.notification_enabled
+    enabled        = var.notification_enabled_1
     threshold      = var.notification_threshold_1
     operator       = var.notification_operator_1
     threshold_type = var.notification_threshold_type_1
@@ -37,5 +31,4 @@ resource "azurerm_consumption_budget_resource_group" "example" {
 
     contact_emails = var.contact_emails_2
   }
-
 }
