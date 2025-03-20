@@ -1,11 +1,10 @@
-resource_group_name = "example-rg7500"
-location            = "central india"
-budget_name                   = "example-budget"
+resource_group_id             = "/subscriptions/809eff35-137f-4411-9bef-83c5a1552808/resourceGroups/king-kon759875"
+budget_name                   = "example-budget7500"
 amount                        = 1000
 time_grain                    = "Monthly"
 start_date                    = "2025-03-01T00:00:00Z"
-end_date                      = "2027-03-31T23:59:59Z"
-notification_enabled          = true
+end_date                      = "2027-07-01T00:00:00Z"
+notification_enabled_1        = true
 notification_threshold_1      = 90.0
 notification_operator_1       = "EqualTo"
 notification_threshold_type_1 = "Forecasted"
