@@ -1,5 +1,17 @@
+
+
+
+terraform {
+  required_providers {
+    azurerm = {
+      source = "hashicorp/azurerm"
+      version = ">= 3.54.0"
+    }
+  }
+}
+
 provider "azurerm" {
-  features {}
+  # Configuration options
 }
 
 resource "azurerm_consumption_budget_resource_group" "example" {
