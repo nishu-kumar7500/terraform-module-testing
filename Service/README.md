@@ -1,21 +1,17 @@
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
-| Name | Version |
-|------|---------|
-| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | >= 3.54.0 |
+No requirements.
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | >= 3.54.0 |
+No providers.
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_azure_budget"></a> [azure\_budget](#module\_azure\_budget) | ../azure_budget_alert | n/a |
+| <a name="module_azure_budget"></a> [azure\_budget](#module\_azure\_budget) | ../modules | n/a |
 
 ## Resources
 
