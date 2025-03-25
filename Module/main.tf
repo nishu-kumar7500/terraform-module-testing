@@ -14,33 +14,31 @@ provider "azurerm" {
   # Configuration options
 }
 
-resource "azurerm_consumption_budget_resource_group" "example" {
-  name              = var.budget_name
-  resource_group_id = var.resource_group_id
+resource "azurerm_consumption_budget_resource_group" "consumption_budget" {
+  name              = var.budget.budget_name
+  resource_group_id = var.budget.resource_group_id
 
-  amount     = var.amount
-  time_grain = var.time_grain
+  amount     = var.budget.amount
+  time_grain = var.budget.time_grain
 
   time_period {
-    start_date = var.start_date
-    end_date   = var.end_date
+    start_date = var.budget.start_date
+    end_date   = var.budget.end_date
   }
 
   notification {
-    enabled        = var.notification_enabled_1
-    threshold      = var.notification_threshold_1
-    operator       = var.notification_operator_1
-    threshold_type = var.notification_threshold_type_1
-
-    contact_emails = var.contact_emails_1
-    contact_roles  = var.contact_roles_1
+    enabled        = var.budget.notification_1.enabled
+    threshold      = var.budget.notification_1.threshold
+    operator       = var.budget.notification_1.operator
+    threshold_type = var.budget.notification_1.threshold_type
+    contact_emails = var.budget.notification_1.contact_emails
+    contact_roles  = var.budget.notification_1.contact_roles
   }
 
   notification {
-    enabled   = var.notification_enabled_2
-    threshold = var.notification_threshold_2
-    operator  = var.notification_operator_2
-
-    contact_emails = var.contact_emails_2
+    enabled        = var.budget.notification_2.enabled
+    threshold      = var.budget.notification_2.threshold
+    operator       = var.budget.notification_2.operator
+    contact_emails = var.budget.notification_2.contact_emails
   }
 }
