@@ -1,6 +1,10 @@
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
+| Name | Version |
+|------|---------|
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | n/a |
+
 No requirements.
 
 ## Providers
